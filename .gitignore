@@ -1,0 +1,20 @@
+# Rust build artifacts from any package or workspace
+target/
+**/*.rs.bk
+
+# Model weights & tokenizer binaries (NEVER commit these)
+/models/
+*.gguf
+*.bin
+*.safetensors
+*.model
+
+# Binary test fixtures (optional: keep small <1MB fixtures, ignore large dumps)
+tests/fixtures/*.raw
+
+# macOS & IDE metadata
+.DS_Store
+.vscode/
+.idea/
+.serena/
+*.instrumentstrace
